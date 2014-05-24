@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="http://cdn.jsdelivr.net/jquery.waypoints/2.0.4/waypoints.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNkoIJKoW64diZ8DEO-J_7rKibR4qz7f8" type="text/javascript"></script>
+    <script src="all.js"></script>
+  </head>
+  <body>
+    <header></header>
+    <div class='container'>
+      <div id="map-container">
+        <div id="map-canvas">
+        </div>
+      </div>
+      <div class='video-container'>
+        <div class="video" data-lat="35.73" data-lng="139.86">
+          <video id="video01" src="videos/IMG_2597.MOV" loop mute></video>
+          <div class="video__footer"></div>
+        </div>
+        <div class="video" data-lat="50.00" data-lng="130.00">
+          <video id="video02" src="videos/IMG_2621.MOV" loop mute></video>
+          <div class="video__footer"></div>
+        </div>
+        <div class="video" data-lat="-10.00" data-lng="-23.00">
+          <video id="video03" src="videos/IMG_2626.MOV" loop mute></video>
+          <div class="video__footer"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
