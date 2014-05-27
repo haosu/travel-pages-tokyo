@@ -31,9 +31,33 @@ Travel.View.Video = function(videoModel) {
     },
 
     renderMap: function() {
+      var styles = [{
+        stylers: [
+          { hue: "#00ffe6" },
+          { saturation: -20 }
+        ]
+      },
+      {
+        featureType: "road",
+        elementType: "geometry",
+        stylers: [
+          { lightness: 100 },
+          { visibility: "simplified" }
+        ]
+      },
+      {
+        featureType: "road",
+        elementType: "labels",
+        stylers: [
+          { visibility: "off" }
+        ]
+      }];
+      var location = this.model.getLocation();
       var mapOptions = {
-        center: new google.maps.LatLng(-34.397, 150.644),
-        zoom: 8
+        center: new google.maps.LatLng(location.lat, location.lng),
+        zoom: 13,
+        mapTypeControl: false,
+        styles: styles
       };
       var $mapContainer = this.$el.find('.story-map');
       var map = new google.maps.Map($mapContainer[0], mapOptions);
