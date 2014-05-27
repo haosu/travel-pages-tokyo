@@ -1,37 +1,3 @@
-var Travel = {
-  Model: {},
-  View: {}
-};
-
-Travel.VideoManager = function() {
-  return {
-    stageVideo: function(video) {
-      video.play();
-      video.$el.addClass('staged');
-    },
-
-    unstageVideo: function(video) {
-      video.pause();
-      video.$el.removeClass('staged');
-    }
-  };
-};
-
-Travel.Model.Video = function(videoHash) {
-  return {
-    videoHash: videoHash,
-
-    getPath: function() {
-      return this.videoHash.video_path;
-    },
-
-    getName: function() {
-      var videoPathParts = this.getPath().split('/');
-      return videoPathParts[videoPathParts.length - 1].split('.')[0];
-    }
-  };
-};
-
 Travel.View.Video = function(videoModel) {
   return {
     model: videoModel,
@@ -43,6 +9,7 @@ Travel.View.Video = function(videoModel) {
 
     render: function() {
       this.$el = $(window.contentTemplate());
+      this.$el.find('.story-container').append(window.storyTemplate());
 
       return this;
     },
@@ -63,38 +30,60 @@ Travel.View.Video = function(videoModel) {
       }
     },
 
+    renderMap: function() {
+      var mapOptions = {
+        center: new google.maps.LatLng(-34.397, 150.644),
+        zoom: 8
+      };
+      var $mapContainer = this.$el.find('.story-map');
+      var map = new google.maps.Map($mapContainer[0], mapOptions);
+    },
+
     removeVideo: function() {
       this.$el.find('video').remove();
       this.videoRendered = false;
       this.nextAction = undefined;
     },
 
+    removeMap: function() {
+    },
+
+    stage: function() {
+      this.renderVideo();
+      this.renderMap();
+    },
+
+    unstage: function() {
+      this.removeVideo();
+      this.removeMap();
+    },
+
     setWaypoints: function() {
       // add lazy loading of off screen video
       this.$el.waypoint(function(direction) {
         if (direction == 'down') {
-          this.renderVideo();
+          this.stage();
         }
       }.bind(this), { offset: '300%' });
 
       // add removal of videos that have scrolled off screen
       this.$el.waypoint(function(direction) {
         if (direction == 'down') {
-          this.removeVideo();
+          this.unstage();
         }
       }.bind(this), { offset: '-300%' });
 
       // reload while scrolling up
       this.$el.waypoint(function(direction) {
         if (direction == 'up') {
-          this.renderVideo();
+          this.stage();
         }
       }.bind(this), { offset: '-300%' });
 
       // add removal of videos that have scrolled off screen
       this.$el.waypoint(function(direction) {
         if (direction == 'up') {
-          this.removeVideo();
+          this.unstage();
         }
       }.bind(this), { offset: '300%' });
     },
@@ -160,40 +149,3 @@ Travel.View.Video = function(videoModel) {
     }
   };
 };
-
-$(function() {
-  window.videoTemplate = Handlebars.compile($('#template-video-container').html());
-  window.contentTemplate = Handlebars.compile($('#template-content-container').html());
-  window.videoManager = new Travel.VideoManager();
-
-  var videoViews = [];
-
-  Travel.VideoData.videos.forEach(function(videoHash) {
-    var videoModel = new Travel.Model.Video(videoHash);
-    var videoView = new Travel.View.Video(videoModel);
-
-    $('.container').append(videoView.render().$el);
-    videoView.setWaypoints();
-    videoViews.push(videoView);
-  });
-
-  $window = $(window);
-
-  $window.scroll(function() {
-    var topOffset = $window.scrollTop();
-    if (topOffset > -1) {
-      var $stagedList = $('.staged video');
-      $stagedList.each(function(idx, stagedVideo) {
-        $(stagedVideo).offset({ top: topOffset });
-      });
-    }
-  });
-
-  var setContentMargin = function() {
-    $('.content-padding').css({ 'height': $('video').height() * 2 });
-  }();
-
-  $window.resize(function() {
-    setContentMargin();
-  });
-});

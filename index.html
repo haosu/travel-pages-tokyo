@@ -5,14 +5,21 @@
     <script src="http://cdn.jsdelivr.net/jquery.waypoints/2.0.4/waypoints.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNkoIJKoW64diZ8DEO-J_7rKibR4qz7f8" type="text/javascript"></script>
     <script src="http://builds.handlebarsjs.com.s3.amazonaws.com/handlebars-v1.3.0.js"></script>
-    <script src="all.js"></script>
-    <!--<script src="test_videos.js"></script>-->
-    <script src="videos.js"></script>
+    <script src="javascript/utils.js"></script>
+    <script src="javascript/parallax.js"></script>
+    <script src="javascript/video-model.js"></script>
+    <script src="javascript/video-view.js"></script>
+    <script src="javascript/videos.js"></script>
+    <script src="javascript/app.js"></script>
   </head>
   <body>
-    <header>
-      <div class="header-text" class="parallax" data-speed="1.5">
+    <header class="staged">
+      <div class="header-text parallax" data-prop='bottom' data-speed="1.5" data-initial=".10">
         <h1>Scenes of Tokyo</h1>
+        <p>
+          Experience exerpts in the form of video clips from my short stopover
+          in Tokyo
+        </p>
       </div>
     </header>
     <div class='container'></div>
@@ -24,6 +31,29 @@
 
   <script type="text/x-handlebars-template" id="template-story-container">
     <div class="story">
+      <div class="story-title parallax"
+        data-container=".story-container"
+        data-initial="-.1"
+        data-prop="bottom"
+        data-speed="1.5">
+        <div class="story-map "
+          data-container=".story-container"
+          data-initial="-.1"
+          data-prop="bottom"
+          data-speed="1.5">
+        </div>
+        <p>
+          Zombie ipsum reversus ab viral inferno, nam rick grimes malum
+          cerebro. De carne lumbering animata corpora quaeritis. Summus brains
+          sit , morbo vel maleficia? De apocalypsi gorger omero undead survivor
+          dictum mauris. Hi mindless mortuis soulless creaturas, imo evil
+          stalking monstra adventus resi dentevil vultus comedat cerebella
+          viventium.
+        </p>
+        <h2>
+          Title
+        </h2>
+      </div>
     </div>
   </script>
 
