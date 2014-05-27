@@ -55,7 +55,7 @@ Travel.View.Video = function(videoModel) {
       var location = this.model.getLocation();
       var mapOptions = {
         center: new google.maps.LatLng(location.lat, location.lng),
-        zoom: 13,
+        zoom: this.model.getZoom(),
         mapTypeControl: false,
         styles: styles
       };
