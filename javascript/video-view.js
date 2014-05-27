@@ -8,7 +8,7 @@ Travel.View.Video = function(videoModel) {
     nextAction: undefined,
 
     render: function() {
-      this.$el = $(window.contentTemplate());
+      this.$el = $(window.contentTemplate({ videoName: this.model.getName() }));
       this.$el.find('.story-container').append(window.storyTemplate());
 
       return this;
