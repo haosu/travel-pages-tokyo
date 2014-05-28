@@ -7,7 +7,7 @@ var Travel = {
 Travel.VideoManager = function() {
   return {
     stageVideo: function(video) {
-      //video.play();
+      video.play();
       video.$el.addClass('staged');
     },
 

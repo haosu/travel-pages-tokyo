@@ -14,9 +14,6 @@ header {
   height: 100%;
 }
 
-h1, h2, h3 {
-}
-
 h1 {
   font-size: 5em;
 }
@@ -29,15 +26,15 @@ p {
   font-size: 1.25em;
 }
 
+video {
+  width: 100%;
+}
+
 .header-text {
   position: absolute;
   margin: 0 5%;
   opacity: 0;
   bottom: -10%;
-}
-
-video {
-  width: 100%;
 }
 
 .container {
@@ -79,7 +76,6 @@ video {
 .story-map {
   width: 20em;
   height: 20em;
-  background-color: #000;
 }
 
 .story-title {
