@@ -8,8 +8,14 @@ Travel.View.Video = function(videoModel) {
     nextAction: undefined,
 
     render: function() {
-      this.$el = $(window.contentTemplate({ videoName: this.model.getName() }));
-      this.$el.find('.story-container').append(window.storyTemplate());
+      this.$el = $(window.contentTemplate({
+        videoName: this.model.getName()
+      }));
+
+      this.$el.find('.story-container').append(window.storyTemplate({
+        story: this.model.getStory(),
+        title: this.model.getTitle()
+      }));
 
       return this;
     },

@@ -9,22 +9,23 @@ Travel.VideoData = {
         "lat": "35.7366466",
         "lng": "139.826058"
       },
-      "story": {
-      }
+      "story": "Getting off the plane in a new place is an electrifying feeling. I hadn't printed any information about how to get to my hostel, let alone any information about the hostel itself, expecting my phone to work and to have internet at some point. The way in to Tokyo from NRT was easy enough. Just hop on the Keisei Skyliner."
+
     },
     {
       "video_path": "IMG_2621.MOV",
-      "title": "The trip in",
+      "title": "Streets of Asakusa",
       "zoom": "16",
       "location": {
         "lat": "35.7121182",
         "lng": "139.7954923"
       },
-      "story": {
-      }
+      "story": "Japan is like no place I've ever been, and the culture shock I experienced was pleasant. I found every street exciting, and every new turn was something fresh (as shown by the number of random street videos I took)."
     },
     {
       "video_path": "IMG_2626.MOV",
+      "title": "Sensō-ji",
+      "story": "Near our hostel in Kuramae was a temple in Asakusa. That day there seemed to be many students visiting. Our walk to the temple involved a few tasty stops at local eateries.",
       "zoom": "18",
       "location": {
         "lat": "35.715006",
@@ -33,6 +34,7 @@ Travel.VideoData = {
     },
     {
       "video_path": "IMG_2627.MOV",
+      "title": "Mmmmmm incense",
       "zoom": "18",
       "location": {
         "lat": "35.715006",
@@ -41,6 +43,8 @@ Travel.VideoData = {
     },
     {
       "video_path": "IMG_2631.MOV",
+      "title": "Trains around town",
+      "story": "I've been on subways before. I've been on nice subways in other countries before. For some reason, I thought Tokyo subways were particularly interesting. I had to weed way too many subway ride videos out.",
       "location": {
         "lat": LAT,
         "lng": LNG
@@ -48,6 +52,8 @@ Travel.VideoData = {
     },
     {
       "video_path": "IMG_2645.MOV",
+      "title": "Urban pond",
+      "story": "Ashwin took us on a mad hunt for Yūshūkan, the Japanese military museum. Next to it was this little pond. I was a nice bit of solace from the busy surrounding city.",
       "zoom": "18",
       "location": {
         "lat": "35.6943033",
