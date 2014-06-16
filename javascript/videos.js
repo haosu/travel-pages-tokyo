@@ -119,6 +119,7 @@ Travel.VideoData = {
     },
     {
       "video_path": "IMG_2708.mp4",
+      "title": "Alleyways",
       "zoom": "15",
       "location": {
         "lat": "35.6987533",
@@ -127,6 +128,7 @@ Travel.VideoData = {
     },
     {
       "video_path": "IMG_2711.mp4",
+      "story": "This garden path was in between Shinjuku station and Golden Gai, it was a quiet respite from the bustling streets.",
       "zoom": "18",
       "location": {
         "lat": "35.69379",
@@ -135,6 +137,7 @@ Travel.VideoData = {
     },
     {
       "video_path": "IMG_2717.mp4",
+      "story": "There were so many narrow streets like these around Shinjuku. Short, closely packed buildings, with signs advertising restuarants and stores on each floor.",
       "location": {
         "lat": "35.694347",
         "lng": "139.702743"
@@ -142,6 +145,8 @@ Travel.VideoData = {
     },
     {
       "video_path": "IMG_2728.mp4",
+      "title": "The Lantern",
+      "story": "We walked back to narrow streets under the train tracks to find food and came across a few old Japanese men sitting at a kushiyaki restaurant. After sitting down, we notice the latern hanging above the grill is covered in years of grease smoke. Also hanging in the shop are photos of the chef with what looked like Japanese celebrities.",
       "zoom": "18",
       "location": {
         "lat": "35.692972",
@@ -150,6 +155,7 @@ Travel.VideoData = {
     },
     {
       "video_path": "IMG_2730.mp4",
+      "story": "The chef keeps the small charcoal grill hot using a hand fan.",
       "zoom": "18",
       "location": {
         "lat": "35.692972",
@@ -174,6 +180,8 @@ Travel.VideoData = {
     },
     {
       "video_path": "IMG_2747.mp4",
+      "title": "Harajuku times",
+      "story": "I guess I didn't really know what to expect while walking around in Harajuku. While walking through the crush of people, I caught occasional glimpses of neon hair.",
       "zoom": "18",
       "location": {
         "lat": "35.6714818",
@@ -182,6 +190,7 @@ Travel.VideoData = {
     },
     {
       "video_path": "IMG_2777.mp4",
+      "story": "This (literally) underground boutique had all kinds of fun fashion.",
       "zoom": "18",
       "location": {
         "lat": "35.669249",
@@ -197,6 +206,7 @@ Travel.VideoData = {
     },
     {
       "video_path": "IMG_2782.mp4",
+      "title": "Traffic",
       "location": {
         "lat": "35.6701061",
         "lng": "139.7048531"
@@ -211,6 +221,8 @@ Travel.VideoData = {
     },
     {
       "video_path": "IMG_2796.mp4",
+      "title": "Octopus balls of delight",
+      "story:" "I love takoyaki, like seriously love it. The small octopus chunk in the middle of a steaming hot dough ball is life changing. The glistening sauce and waving bonito flakes are an instant cause for droll.",
       "zoom": "18",
       "location": {
         "lat": "35.669765",
@@ -219,6 +231,7 @@ Travel.VideoData = {
     },
     {
       "video_path": "IMG_2797.mp4",
+      "story": "The precision and speed of a skilled takoyaki cook is amazing. The grill has enough space for hundreds of the snack!",
       "zoom": "18",
       "location": {
         "lat": "35.669765",
@@ -234,6 +247,7 @@ Travel.VideoData = {
     },
     {
       "video_path": "IMG_2828.mp4",
+      "title": "The Robot Cafe",
       "zoom": "18",
       "location": {
         "lat": "35.694347",
@@ -242,6 +256,8 @@ Travel.VideoData = {
     },
     {
       "video_path": "IMG_2831.mp4",
+      "title": "Okonomiyaki",
+      "story": "Like your standard pair of tourists, we had no idea how to prepare our own okonomiyaki. Thankfully, the waitress was so gracious in helping us feed ourselves.",
       "location": {
         "lat": "35.694347",
         "lng": "139.702743"
@@ -249,6 +265,7 @@ Travel.VideoData = {
     },
     {
       "video_path": "IMG_2834.mp4",
+      "story": "How do little restaurants like this stay in business? There is so much choice in Tokyo that It wouldn't be surprising if a small place like this was overlooked.",
       "location": {
         "lat": "35.694347",
         "lng": "139.702743"
@@ -256,6 +273,8 @@ Travel.VideoData = {
     },
     {
       "video_path": "IMG_2846.mp4",
+      "title": "Streets of Golden Gai",
+      "story": "These narrow streets of old Tokyo are home to many exclusive regulars only bars. One of the last remnants of old Tokyo untouched by the Yukuza in the 1980s, it attracts locals and tourists alike.",
       "zoom": "17",
       "location": {
         "lat": "35.693917",
@@ -272,6 +291,8 @@ Travel.VideoData = {
     },
     {
       "video_path": "IMG_2861.mp4",
+      "title": "Ahhh stampede!",
+      "story": "I tried not to stand in the middle of Shibuya crossing to get some tourist photos. Instead we camped out at a Starbucks overlooking the intersection and snapped our hearts out.",
       "zoom": "18",
       "location": {
         "lat": "35.659501",
@@ -287,6 +308,7 @@ Travel.VideoData = {
     },
     {
       "video_path": "IMG_2877.mp4",
+      "story": "I just love subways",
       "location": {
         "lat": LAT,
         "lng": LNG
@@ -294,6 +316,8 @@ Travel.VideoData = {
     },
     {
       "video_path": "IMG_2881.mp4",
+      "title": "Early ride to Tsukiji",
+      "story": "We made our first attempt to see Tsukiji fish market at 4AM. After arriving we learned the market was closed for a Japanese holiday. The cab was a delight. While it looks like an old boxy carraige, the doors open and close automagically, and the insides are outfitted with all kinds of crazy car stuff.",
       "location": {
         "lat": LAT,
         "lng": LNG
@@ -301,6 +325,7 @@ Travel.VideoData = {
     },
     {
       "video_path": "IMG_2891.mp4",
+      "story": "It snowed",
       "zoom": "18",
       "location": {
         "lat": "35.705038",
@@ -309,6 +334,7 @@ Travel.VideoData = {
     },
     {
       "video_path": "IMG_2893.mp4",
+      "story": "The streets of Ginza were quite empty. For a business disctric on a weekday, there were surprisingly few people.",
       "zoom": "18",
       "location": {
         "lat": "35.667660",
@@ -341,6 +367,9 @@ Travel.VideoData = {
     },
     {
       "video_path": "IMG_2961.mp4",
+      "title": "Soba Time!",
+      "story": "These chewy buckwheat noodles are delicious, they are eaten cold and dipped in a salty broth topped with green onion.",
+      "story": ""
       "zoom": "18",
       "location": {
         "lat": "35.663410",
@@ -349,6 +378,8 @@ Travel.VideoData = {
     },
     {
       "video_path": "IMG_2982.mp4",
+      "title": "The Ramen Adventure",
+      "story": "I had found a highly regarded ramen shop across Tokyo that le me down a series of empty streets later at night. The shop was located in a dark alley behind a black tarp, with only a pork bone hanging outside the door.",
       "zoom": "17",
       "location": {
         "lat": "35.711088",
@@ -357,6 +388,7 @@ Travel.VideoData = {
     },
     {
       "video_path": "IMG_2987.mp4",
+      "story": "The lone chef boiled fresh noodles at the time of order, and had massive stock pots of broth ready.",
       "zoom": "18",
       "location": {
         "lat": "35.710736",
@@ -397,6 +429,8 @@ Travel.VideoData = {
     },
     {
       "video_path": "IMG_3044.mp4",
+      "title": "Tsukiji",
+      "story": "This place is definitely not meant for tourists. While there are daily guided tours, the business dones't stop. The lifts were constantly whizzing by us at breakneck speeds.",
       "zoom": "18",
       "location": {
         "lat": "35.665751",
@@ -421,6 +455,7 @@ Travel.VideoData = {
     },
     {
       "video_path": "IMG_3086.mp4",
+      "story": "The auction floor had an electric buzz to it. Buyers were milling around the floor inspecting the goods and taking notes.",
       "zoom": "18",
       "location": {
         "lat": "35.665751",
@@ -429,6 +464,7 @@ Travel.VideoData = {
     },
     {
       "video_path": "IMG_3097.mp4",
+      "story": "I had never seen a dead fix treated this way. To think that this fish was sold for a few hundred thousand dollars and will end up on a high end sushi plate.",
       "zoom": "18",
       "location": {
         "lat": "35.665751",
@@ -437,6 +473,8 @@ Travel.VideoData = {
     },
     {
       "video_path": "IMG_3099.mp4",
+      "title": "The Auctioneer",
+      "story": "The auction itself was quite musical and the auctioneer had amazing consistency and pace.",
       "zoom": "18",
       "location": {
         "lat": "35.665751",
