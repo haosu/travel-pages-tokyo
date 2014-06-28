@@ -222,7 +222,7 @@ Travel.VideoData = {
     {
       "video_path": "IMG_2796.mp4",
       "title": "Octopus balls of delight",
-      "story:" "I love takoyaki, like seriously love it. The small octopus chunk in the middle of a steaming hot dough ball is life changing. The glistening sauce and waving bonito flakes are an instant cause for droll.",
+      "story": "I love takoyaki, like seriously love it. The small octopus chunk in the middle of a steaming hot dough ball is life changing. The glistening sauce and waving bonito flakes are an instant cause for droll.",
       "zoom": "18",
       "location": {
         "lat": "35.669765",
@@ -369,7 +369,6 @@ Travel.VideoData = {
       "video_path": "IMG_2961.mp4",
       "title": "Soba Time!",
       "story": "These chewy buckwheat noodles are delicious, they are eaten cold and dipped in a salty broth topped with green onion.",
-      "story": ""
       "zoom": "18",
       "location": {
         "lat": "35.663410",

@@ -31,10 +31,13 @@ video {
 }
 
 .header-text {
+  bottom: 0;
+  margin: 5em 5%;
   position: absolute;
-  margin: 0 5%;
-  opacity: 0;
-  bottom: -10%;
+}
+
+.header-text h1 {
+  margin-bottom: 0;
 }
 
 .container {
@@ -61,6 +64,7 @@ video {
 
 .video-container {
   visibility: hidden;
+  width: 100%;
 }
 
 .content-container.staged .video-container {
