@@ -21,6 +21,7 @@ Travel.Parallax = {
       var initial = parseFloat($element.data('initial')) || 0; // offset %
       var containerSelector = $element.data('container');
       var prop = $element.data('prop');
+      var fadeOut = $element.data('fadeout');
 
       var $container;
       if (containerSelector) {
@@ -53,8 +54,8 @@ Travel.Parallax = {
         topValue = parentTop + topValue;
       }
 
-      $element.offset({ top: topValue })
-      $element.css({ opacity: distance * 0.01 });
+      $element.offset({ top: topValue });
+      $element.css({ opacity: 1 + (distance * 0.01 * (fadeOut ? -1 : 1)) });
     });
   }
 }
